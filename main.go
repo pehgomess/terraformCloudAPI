@@ -79,9 +79,9 @@ func main() {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusCreated {
-		fmt.Println("Erro ao criar o espaço de trabalho. Status:", resp.Status)
+		fmt.Println("Erro ao criar workspace. Status:", resp.Status)
 		return
 	}
 
-	fmt.Println("Espaço de trabalho criado com sucesso.")
+	fmt.Println("Workspace criado com sucesso.")
 }
